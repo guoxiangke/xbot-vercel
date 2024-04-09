@@ -7,9 +7,13 @@
     },
     "routes": [
         {
-            "src": "/build/assets/([^.\/]+)\.(css|js)",
-            "dest": "/api/assets.php?file=$1&type=$2"
-        },    
+            "src": "/build/assets/(.*).css",
+            "dest": "/api/css.php?file=$1"
+        },
+        {
+            "src": "/build/assets/(.*).js",
+            "dest": "/api/js.php?file=$1"
+        },
         {
             "src": "/(.*)",
             "dest": "/api/index.php"

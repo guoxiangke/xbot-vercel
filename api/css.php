@@ -4,5 +4,5 @@
  * // "src": "/(css|js)/(.*)$", 
  * // "dest": "/api/assets.php?file=$1&type=$2"
  */
-header("Content-type: text/". $_GET['type'] ."; charset: UTF-8");
-echo require __DIR__ . '/../public/build/assets/' . basename($_GET['file']) .".". $_GET['type'];
+header("Content-type: text/css; charset: UTF-8");
+echo require __DIR__ . '/../public/build/assets/' . basename($_GET['file']);
