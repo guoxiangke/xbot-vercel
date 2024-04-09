@@ -5,4 +5,4 @@
  * // "dest": "/api/assets.php?file=$1&type=$2"
  */
 header("Content-type: text/js; charset: UTF-8");
-echo require __DIR__ . '/../public/build/assets/' . basename($_GET['file']);
+echo require __DIR__ . '/../public/build/assets/' . basename($_GET['file']) . ".js";

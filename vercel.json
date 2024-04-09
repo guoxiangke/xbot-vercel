@@ -7,11 +7,11 @@
     },
     "routes": [
         {
-            "src": "/build/assets/(.*).css",
+            "src": "/build/assets/(^.+).css",
             "dest": "/api/css.php?file=$1"
         },
         {
-            "src": "/build/assets/(.*).js",
+            "src": "/build/assets/(^.+).js",
             "dest": "/api/js.php?file=$1"
         },
         {
