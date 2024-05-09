@@ -8,6 +8,6 @@ services:
     ports:
       - "8008:8000"
     volumes:
-      - ./:/app/public
-    command: "php /app/public/artisan octane:start"
+      - ./:/app
+    entrypoint: php artisan octane:frankenphp --max-requests=1
 

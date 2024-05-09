@@ -9,6 +9,8 @@ RUN install-php-extensions \
     pcntl \
     bcmath
     
-COPY . /app/public
+COPY . /app
 
-WORKDIR /app/public
+WORKDIR /app
+
+ENTRYPOINT ["php", "artisan", "octane:frankenphp"]
